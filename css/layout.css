@@ -1,0 +1,151 @@
+img{
+  max-width: 100%;
+}
+/*Forside*/
+
+.mig {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 500px;
+    animation: rotate 8s infinite;
+}
+
+.portfoliotekst {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Tilbageknap*/
+
+
+.tilbageknap{
+  display: inline-block;
+  background-color: #292929;
+  border: 5px solid #F5F5F5;
+  padding: 5px;
+  text-align: left;
+  width: auto;
+  height: auto;
+  
+}
+
+
+.tilbageknap h1{
+  font-family: Helvetica, arial, sans-serif;
+  font-weight:bolder;
+  color: #F5F5F5;
+  font-size: 300%;
+}
+
+.tilbageknap h3{
+  font-family: Helvetica, arial, sans-serif;
+  font-weight:lighter;
+  color: #F5F5F5;
+  font-size: 200%;
+  line-height: 100%;
+}
+
+/*Tema 2*/
+
+.studiestartsproeveimg{
+  text-align: center;
+}
+.studiestartsproeveimg img{
+  width: 600px;
+  height: 400px;
+}
+
+.tema2img{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  flex-direction: column;
+}
+.tema2img img{
+  width: 600px;
+  height: 400px;
+}
+
+/*Tema 3*/
+
+
+.tema3start{
+  text-align: center;
+}
+.tema3start img{
+  width: 400px;
+  height: 500px;
+}
+
+.tema3img{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  flex-direction: row;
+}
+.tema3img img{
+  width: 400px;
+  height: 300px;
+}
+
+/*Tema 4*/
+
+
+.tema4start{
+  text-align: center;
+}
+.tema4start img{
+  width: 500px;
+  height: 300px;
+}
+
+.tema4img{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  flex-direction: row;
+}
+.tema4img img{
+  width: 300px;
+  height: 400px;
+}
+
+/*Tema 5*/
+
+
+.tema5img{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  flex-direction: column;
+}
+.tema5img img{
+  width: 600px;
+  height: 400px;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

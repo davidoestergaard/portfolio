@@ -1,0 +1,133 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forside</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="/cssspil/spil.css" />
+    <link rel="icon" type="image/png" href="img/mig.png">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        DAVID<br />
+        ØSTERGAARD
+      </h1>
+      <ul>
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="ommig.html">Om mig</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <h1>TEMA 4</h1>
+      <h2>Grundlæggende animation</h2>
+      <p>
+        Tema 4 dannede rammer for de kompetencer, det kræver at kunne lave sit eget spil fra bunden af. Det startede med ide generering i form af krydslister og andet, der kunne være med til at skabe en ide til et spil. Vi blev introduceret til forskellige spil-stilarter, og jeg valgte flat design 2, da jeg ville fokusere på et minimalistisk flat design. Efter ideen var på plads, lavede jeg papirs-prototyper og aktivitetsdiagram til mit spil. Alt dette var med til at skabe fundamentet for resten af min proces.<br><br>
+      </p>
+        <figure class="tema4start">
+          <img src="tema4img/styletile.png" alt="styletileimg"/>
+        </figure><br>
+      <p>
+        I tema 4 blev vi introduceret til adobe illustrator, og hvordan vi designede vores spil-assets og figurer. Her var de tidligere skitser og prototyper meget brugbare og skabte et godt udgangspunkt for, hvordan det skulle ende med at se ud.<br><br>
+      </p>
+        <figure class="tema4img">
+          <img src="tema4img/aktivitetsdiagram.png" alt="aktivitetsdiagram"/>
+        </figure><br>
+      <p>
+        Efter hele design processen var overstået, gik vi i dybden med javascript og css. Her var det især de øvelser der blev givet, der var med til at skabe en grundlæggende forståelse for hvordan javascript fungere. Læring man især kunne tage videre med til sit eget spil. Vi blev også introduceret til state-machine diagram, som gav et overblik over sit eget spil.<br><br>
+        
+        Til sidst formåede jeg at sætte design delen og kodningen sammen, og skabte mit helt eget spil. Du kan prøve at spille det nedenfor.<br><br>Link til min spil hjemmeside, med procesdokumentation: <a href="http://davidoestergaard.dk/moneymonkey/">davidoestergaard.dk/monemonkey/</a><br>
+      </p>
+        <br><br>
+
+      
+        
+      <div id="screen">
+        <div id="alle">
+          <div id="baggrund"></div>
+          <div id="traetoppe"></div>
+          <div id="traestammer"></div>
+          <div id="abe"></div>
+        </div>
+
+        <div id="startskaerm">
+          <div id="moneymonkey"></div>
+          <div id="startknap" class="knap"></div>
+
+          <div id="spil_elementerstart">
+            <div id="moent1_container">
+              <div id="moent1_sprite"></div>
+            </div>
+            <div id="moent2_container">
+              <div id="moent2_sprite"></div>
+            </div>
+            <div id="moent3_container">
+              <div id="moent3_sprite"></div>
+            </div>
+            <div id="moent4_container">
+              <div id="moent4_sprite"></div>
+            </div>
+            <div id="moent5_container">
+              <div id="moent5_sprite"></div>
+            </div>
+            <div id="moent6_container">
+              <div id="moent6_sprite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="spilskaerm" class="">
+          <div id="spil_elementer">
+            <div id="moent_container" class="fall">
+              <div id="moent_sprite"></div>
+            </div>
+            <div id="banan_container" class="fall">
+              <div id="banan_sprite"></div>
+            </div>
+            <div id="chokolade_container" class="fall">
+              <div id="chokolade_sprite"></div>
+            </div>
+          </div>
+          <div id="game_ui">
+            <div id="score_board">
+              <span id="myPoints">0</span>
+            </div>
+
+            <div id="energy_board">
+              <span id="myLives">3</span>
+            </div>
+            <div id="time_board">
+              <div id="time_container">
+                <div id="time_sprite"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="slutskaermgod" class="hide">
+          <div id="godtgaeet"></div>
+          <div id="spiligen" class="knap"></div>
+        </div>
+
+        <div id="slutskaermkomigen" class="hide">
+          <div id="komigen"></div>
+          <div id="spiligen2" class="knap"></div>
+        </div>
+      </div>
+      
+      <a href="portfolio.html">
+        <figure class="tilbageknap">
+          <h1>TILBAGE</h1>
+          <h3>Tilbage til portfolio</h3>
+        </figure>
+      </a>
+    </main>
+
+    <footer></footer>
+
+    <script src="/jsspil/script.js"></script>
+  </body>
+</html>

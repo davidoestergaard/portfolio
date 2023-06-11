@@ -1,0 +1,500 @@
+
+
+
+#screen {
+position: relative;
+overflow: hidden;
+max-width: 1400px;
+width: 100%;
+aspect-ratio: 16/9;
+background-color: blue;
+}
+
+/* Generelt - alle skærme */
+#baggrund {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/baggrund.svg);
+    background-size: cover;
+}
+
+#traetoppe {
+  z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 1%;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/traetoppe.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+#traestammer {
+  z-index: 4;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 95%;
+    height: 60%;
+    background-image: url(/imgspil/traestammer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+
+#abe {
+    z-index: 10;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 17%;
+    height: 30%;
+    background-image: url(/imgspil/abe.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    animation-name: move;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+
+/* Generelt slut */
+
+/* Start skærm */
+
+#moneymonkey {
+  z-index: 8;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 95%;
+    height: 95%;
+    background-image: url(/imgspil/moneymonkey.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+#startknap {
+  z-index: 10;
+    position: absolute;
+    top: 29%;
+    left: 37%;
+    width: 37%;
+    height: 16%;
+    background-image: url(/imgspil/startknap.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#moent1_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -100%);
+}
+
+#moent1_sprite {
+  
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+
+#moent2_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -100%);
+}
+
+#moent2_sprite {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+
+#moent3_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -100%);
+}
+
+#moent3_sprite {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+
+#moent4_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -100%);
+}
+
+#moent4_sprite {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+
+#moent5_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -100%);
+}
+
+#moent5_sprite {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+
+#moent6_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+  transform: translate(-50%, -100%);
+}
+
+#moent6_sprite {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+/* Start skærm slut */
+
+
+/* Spil skærm */
+
+#moent_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+
+#moent_sprite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/moeent.svg);
+    background-size: contain;
+}
+
+#banan_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+#banan_sprite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/banan.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#chokolade_container{
+  z-index: 5;
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 1/1;
+}
+#chokolade_sprite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imgspil/choko.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* -------------------- POSITIONER -------------------- */
+
+.pos1 {
+    top: 11%;
+    left: 20%;
+  }
+  .pos2 {
+    top: 11%;
+    left: 30%;
+  }
+  .pos3 {
+    top: 11%;
+    left: 40%;
+  }
+  .pos4 {
+    top: 11%;
+    left: 50%;
+  }
+  .pos5 {
+    top: 11%;
+    left: 60%;
+  }
+  .pos6 {
+    top: 11%;
+    left: 70%;
+  }
+  .pos7 {
+    top: 11%;
+    left: 80%;
+  }
+  
+  /* -------------------- DELAYS -------------------- */
+  
+  .delay1 {
+    animation-delay: 0s;
+  }
+  .delay2 {
+    animation-delay: 0.5s;
+  }
+  .delay3 {
+    animation-delay: 1s;
+  }
+  .delay4 {
+    animation-delay: 1.5s;
+  }
+/*  UI ELEMENTER */
+
+/* hjerte baggrund til liv */
+#energy_board {
+  z-index: 6;
+    position: absolute;
+    top: 1%;
+    left: 94%;
+    width: 5.2%;
+    aspect-ratio: 1/1;
+    background-image: url(/imgspil/lives.svg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  #myLives {
+    z-index: 6;
+    font-family: "Helvetica";
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 3cqw;
+    line-height: 0;
+  }
+  /* gul baggrund til point */
+  #score_board {
+    z-index: 6;
+    position: absolute;
+    top: 12%;
+    left: 94%;
+    width: 5%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imgspil/points.svg);
+    background-size: 100%;
+  }
+  #myPoints {
+    z-index: 6;
+    font-family: "Helvetica";
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 3cqw;
+    line-height: 0;
+  }
+  #time_container {
+    z-index: 6;
+    rotate: -90deg;
+    position:absolute;
+    top: 35%;
+    left: 89%;
+    width: 16%;
+    height: 5%;
+    background-color: rgb(198, 13, 13);
+
+  }
+  #time_sprite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(166, 255, 0);
+  }
+
+/* Spil skærm slut */
+
+/* Slut skærm godt gået*/
+
+
+#godtgaeet {
+  z-index: 6;
+    position: absolute;
+    top: 1%;
+    left: 23%;
+    width: 60%;
+    height: 100%;
+    background-image: url(/imgspil/godtgaeet.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#spiligen {
+    z-index: 6;
+    position: absolute;
+    top: 36%;
+    left: 41%;
+    width: 30%;
+    height: 13%;
+    background-image: url(/imgspil/spiligen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Slut skærm godt gået slut*/
+
+/* Slut skærm kom igen*/
+
+
+#komigen {
+    z-index: 6;
+    position: absolute;
+    top: 1%;
+    left: 20%;
+    width: 60%;
+    height: 100%;
+    background-image: url(/imgspil/komigen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#spiligen2 {
+    z-index: 6;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    height: 15%;
+    background-image: url(/imgspil/spiligen.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Slut skærm kom igen slut*/
+
+
+/* Animatinoer */
+
+.skrump {
+  animation-name: skrump_kf;
+  animation-duration: 30s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  transform-origin: right center;
+}
+@keyframes skrump_kf {
+  0% {
+    scale: 1 1;
+  }
+
+  100% {
+    scale: 0 1;
+  }
+}
+
+.fall {
+  animation-name: fall_kf;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes fall_kf {
+  from {
+    translate: 0, 0%;
+  }
+  to {
+    translate: 0% 600%;
+  }
+}
+
+.fade {
+  animation-name: fade_kf;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fade_kf {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.spin {
+  animation-name: spin_kf;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes spin_kf {
+  from {
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    rotate: 360deg;
+    scale: 0;
+  }
+}
+
+.hide{
+    display: none;
+}
+
+.fadeOut{
+    animation: fadeOut 1s linear forwards;
+}
+
+@keyframes move {
+    from {translate: 0% 0%;}to 
+    {translate: 485% 0%;}
+}
+
+
